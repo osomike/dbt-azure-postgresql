@@ -2,10 +2,23 @@ version: 2
 
 sources:
   - name: shop_data
+    description: A clone fo a Postgresql application database
     database: dbt_demo
     schema: dbt_data_sample
     tables:
       - name: customers
+        description: The raw customers data
+        columns:
+          - name: id
+            description: The ID of the customer
       - name: payments
+        description: The raw payments data
+        columns:
+          - name: id
+            description: The ID of the payment
       - name: orders
+        description: The raw orders data
+        columns:
+          - name: id
+            description: The ID of the order
 
