@@ -6,7 +6,7 @@ WITH payments AS (
         status AS payment_status,
         amount AS payment_amount,
         created AS payment_created
-    FROM dbt_data_sample.payments
+    FROM {{ source('shop_data', 'payments')}}
 )
 
 SELECT * FROM payments

@@ -3,7 +3,7 @@ WITH customers AS (
         id AS customer_id,
         first_name,
         last_name
-    FROM dbt_data_sample.customers
+    FROM {{ source('shop_data', 'customers')}}
 )
 
 SELECT * FROM customers

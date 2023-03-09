@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: shop_data
+    database: dbt_demo
+    schema: dbt_data_sample
+    tables:
+      - name: customers
+      - name: payments
+      - name: orders
+

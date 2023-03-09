@@ -4,7 +4,7 @@ WITH orders AS (
         user_id AS customer_id,
         order_date,
         order_status
-    FROM dbt_data_sample.orders
+    FROM {{ source('shop_data', 'orders')}}
 )
 
 SELECT * FROM orders
