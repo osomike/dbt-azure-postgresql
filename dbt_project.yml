@@ -40,5 +40,5 @@ models:
     staging:
       dbt_data_sample:
         +materialized: view
-        +schema: stg
+        #+schema: stg
         
